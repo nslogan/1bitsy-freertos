@@ -11,8 +11,7 @@ project('USBTMC Demo',
 	version: '0'
 )
 
-# This is a dirty trick for now - I will bring FreeRTOS in as an external dependency at some point
-freertos_src_path =  './../../src/FreeRTOSv10.2.1_191129/FreeRTOS/Source'
+freertos_src_path =  'src/ext/FreeRTOS'
 freertos_port_path = freertos_src_path / 'portable/GCC/ARM_CM4F'
 
 freertos_srcs = files(
